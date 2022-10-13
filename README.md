@@ -8,8 +8,8 @@ Please refer to a full documentation:
 The project is based on the following Spring Application, in order to fully understand the Spring Aerospike 
 integration please refer to this link,a tutorial with an easy step-by-step instructions:
 
-[simple-web-application-using-java-spring-boot-aerospike-database-and-docker](https://medium.com/aerospike-developer-blog/simple-web-application-using-java-spring-boot-aerospike-database-and-docker-ad13795e0089
-))
+[Java-Springboot Aerospike and Docker](https://medium.com/aerospike-developer-blog/simple-web-application-using-java-spring-boot-aerospike-database-and-docker-ad13795e0089
+)
 
 
 Project is backed by spring-data-aerospike:
