@@ -6,7 +6,7 @@ Please refer to the full documentation:
 
 
 The project is based on the following Spring Application, in order to fully understand the Spring Aerospike 
-integration please refer to this link,a tutorial with an easy step-by-step instructions:
+integration please refer to this link:
 
 [Springboot Aerospike and Docker](https://medium.com/aerospike-developer-blog/simple-web-application-using-java-spring-boot-aerospike-database-and-docker-ad13795e0089
 )
