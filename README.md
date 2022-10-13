@@ -1,4 +1,4 @@
-# Simple web application using Java, Spring Boot, Aerospike database, and JMH.
+# Java, Spring Boot, Aerospike database, and JMH.
 
 Project tutorial with an easy step-by-step instructions can be found here:
 
