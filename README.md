@@ -4,8 +4,8 @@ Please refer to a full documentation:
 
 https://aerospike.atlassian.net/wiki/spaces/~62d1c4dcafe495359d9e79a9/pages/2762997864/Spring+JMH+Aerospike+Integration
 
-The project based on the following Spring Application, in order to fully understand the Spring Aerospike 
-integration please refer to this link. Project tutorial with an easy step-by-step instructions can be found here:
+The project is based on the following Spring Application, in order to fully understand the Spring Aerospike 
+integration please refer to this link,a tutorial with an easy step-by-step instructions:
 
 https://medium.com/aerospike-developer-blog/simple-web-application-using-java-spring-boot-aerospike-database-and-docker-ad13795e0089
 
