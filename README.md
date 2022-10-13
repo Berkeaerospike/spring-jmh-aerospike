@@ -16,7 +16,7 @@ Project is backed by spring-data-aerospike:
 
 https://github.com/aerospike-community/spring-data-aerospike
 
-## In order to run the JMHSpringDataDemo through IDE:
+### In order to run the JMHSpringDataDemo through IDE:
 JMHSpringDataDemo should have the following as parameters which are configurable,
 added. removed according to test needs:
 
