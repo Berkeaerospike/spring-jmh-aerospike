@@ -1,6 +1,6 @@
 # JMH integration with Spring and Aerospike
 
-Please refer to a full documentation:
+Please refer to the full documentation:
 
 [Spring JMH Aerospike Integration](https://aerospike.atlassian.net/wiki/spaces/~62d1c4dcafe495359d9e79a9/pages/2762997864/Spring+JMH+Aerospike+Integration)
 
