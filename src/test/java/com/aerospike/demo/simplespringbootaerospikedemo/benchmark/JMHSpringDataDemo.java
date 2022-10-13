@@ -17,7 +17,9 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.test.context.junit4.SpringRunner;
 import java.util.concurrent.TimeUnit;
 
-
+/* Environment variables example
+forkNum=1;warmIterNum=1;warmTime=1;measurementIterations=1;numThreads=1;numUsers=10
+ */
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
@@ -30,6 +32,7 @@ public class JMHSpringDataDemo {
 
     volatile ConfigurableApplicationContext context;
 
+    // Can add any existing Spring Service from the application
     private UserService userService;
 
     final static int numberOfUsers = Integer.parseInt(System.getenv("numUsers"));
@@ -37,6 +40,7 @@ public class JMHSpringDataDemo {
     @Test
     public void contextLoads() throws RunnerException {
         Options jmhRunnerOptions = new OptionsBuilder()
+                // Which benchmark to add
                 .include("\\." + this.getClass().getSimpleName() + "\\.")
                 .warmupIterations(Integer.parseInt(System.getenv("warmIterNum")))
                 .warmupTime(TimeValue.valueOf(System.getenv("warmTime")))
@@ -45,15 +49,21 @@ public class JMHSpringDataDemo {
                 .forks(Integer.parseInt(System.getenv("forkNum")))
                 .threads(Integer.parseInt(System.getenv("numThreads")))
                 .shouldDoGC(true)
+                // Much more information
+                .verbosity(VerboseMode.EXTRA)
+
+                 // Profilers
                 .addProfiler(StackProfiler.class)
                 .addProfiler(GCProfiler.class)
                  //  .addProfiler(LinuxPerfNormProfiler.class)
                  //      .addProfiler(LinuxPerfAsmProfiler.class)
                  //      .addProfiler(WinPerfAsmProfiler.class)
                  //      .addProfiler(DTraceAsmProfiler.class)
-                .verbosity(VerboseMode.EXTRA)
+
+                // JVM tuning
                 .jvmArgs("-Xmx10g")
                 .jvmArgs("-XX:+UseG1GC")
+
                 //.syncIterations(true)
                 .shouldFailOnError(true)
                 .resultFormat(ResultFormatType.TEXT)
